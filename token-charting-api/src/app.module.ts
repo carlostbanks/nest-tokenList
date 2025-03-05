@@ -3,7 +3,7 @@ import { TokenModule } from './token/token.module';
 import { PrismaService } from './prisma.service';
 
 @Module({
-  imports: [TokenModule], // ✅ Updated import
+  imports: [TokenModule],
   providers: [PrismaService],
 })
 export class AppModule {}

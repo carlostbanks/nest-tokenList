@@ -5,8 +5,8 @@ import { PrismaService } from '../prisma.service';
 import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
-  imports: [ScheduleModule.forRoot()], // Enable scheduling
+  imports: [ScheduleModule.forRoot()],
   controllers: [TokenController],
   providers: [TokenService, PrismaService],
 })
-export class TokenModule {} // ✅ Renamed
+export class TokenModule {}

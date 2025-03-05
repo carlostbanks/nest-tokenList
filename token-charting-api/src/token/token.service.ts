@@ -2,7 +2,6 @@ import { HttpException, HttpStatus, Injectable, Logger } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
 import { PrismaService } from 'src/prisma.service';
 import axios from 'axios';
-import { Cron } from '@nestjs/schedule';
 
 @Injectable()
 export class TokenService {
@@ -10,9 +9,21 @@ export class TokenService {
   constructor(private prisma: PrismaService) {}
 
   async getAllTokens() {
-    return this.prisma.token.findMany({
-      include: { prices: true },
-    });
+    try {
+      const tokens = await this.prisma.token.findMany({
+        select: {
+          id: true,
+          name: true,
+          symbol: true,
+          createdAt: true
+        }
+      });
+      console.log('All tokens:', tokens);
+      return tokens;
+    } catch (error) {
+      console.error('Error fetching tokens:', error);
+      throw error;
+    }
   }
 
   async getTokenBySymbol(symbol: string) {
@@ -31,6 +42,83 @@ export class TokenService {
         symbol: formattedSymbol,
       },
     });
+  }
+
+  async searchTokens(query: string) {
+    console.log('Service: Searching with query:', query);
+    
+    try {
+      const tokens = await this.prisma.token.findMany({
+        where: {
+          OR: [
+            { 
+              symbol: { 
+                contains: query.toUpperCase(),
+                mode: 'insensitive'
+              } 
+            },
+            { 
+              name: { 
+                contains: query,
+                mode: 'insensitive'
+              } 
+            }
+          ]
+        },
+        select: {
+          id: true,
+          name: true,
+          symbol: true,
+          createdAt: true
+        }
+      });
+
+      console.log('Service: Search results', tokens);
+      return tokens;
+    } catch (error) {
+      console.error('Service: Search error', error);
+      throw error;
+    }
+  }
+
+  // Method to create a token if it doesn't exist
+  async findOrCreateToken(symbol: string, name?: string) {
+    const formattedSymbol = symbol.toUpperCase();
+    
+    // Try to find existing token
+    let token = await this.prisma.token.findUnique({
+      where: { symbol: formattedSymbol }
+    });
+
+    // If token doesn't exist, create it
+    if (!token) {
+      token = await this.prisma.token.create({
+        data: {
+          symbol: formattedSymbol,
+          name: name || formattedSymbol
+        }
+      });
+    }
+
+    return token;
+  }
+
+  async listAllTokens() {
+    try {
+      const tokens = await this.prisma.token.findMany({
+        select: {
+          id: true,
+          name: true,
+          symbol: true,
+          createdAt: true
+        }
+      });
+      console.log('Attempting to list tokens:', tokens);
+      return tokens;
+    } catch (error) {
+      console.error('Error listing tokens:', error);
+      throw error;
+    }
   }
 
   async fetchTokenPrice(symbol: string) {
