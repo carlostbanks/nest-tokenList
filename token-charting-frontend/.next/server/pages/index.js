@@ -1,0 +1,96 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/index";
+exports.ids = ["pages/index"];
+exports.modules = {
+
+/***/ "./components/TokenChart.js":
+/*!**********************************!*\
+  !*** ./components/TokenChart.js ***!
+  \**********************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-chartjs-2 */ \"react-chartjs-2\");\n/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! chart.js */ \"chart.js\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__, chart_js__WEBPACK_IMPORTED_MODULE_3__]);\n([react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__, chart_js__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n// Register Chart.js components\nchart_js__WEBPACK_IMPORTED_MODULE_3__.Chart.register(chart_js__WEBPACK_IMPORTED_MODULE_3__.CategoryScale, chart_js__WEBPACK_IMPORTED_MODULE_3__.LinearScale, chart_js__WEBPACK_IMPORTED_MODULE_3__.PointElement, chart_js__WEBPACK_IMPORTED_MODULE_3__.LineElement, chart_js__WEBPACK_IMPORTED_MODULE_3__.Title, chart_js__WEBPACK_IMPORTED_MODULE_3__.Tooltip, chart_js__WEBPACK_IMPORTED_MODULE_3__.Legend);\nconst TokenChart = ({ tokenData  })=>{\n    if (!tokenData) return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n        children: \"Loading chart...\"\n    }, void 0, false, {\n        fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/components/TokenChart.js\",\n        lineNumber: 9,\n        columnNumber: 26\n    }, undefined);\n    const chartData = {\n        labels: tokenData.history.map((entry)=>new Date(entry.timestamp).toLocaleTimeString()),\n        datasets: [\n            {\n                label: `${tokenData.symbol} Price (USD)`,\n                data: tokenData.history.map((entry)=>entry.price),\n                borderColor: \"rgba(75, 192, 192, 1)\",\n                backgroundColor: \"rgba(75, 192, 192, 0.2)\",\n                borderWidth: 2\n            }\n        ]\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__.Line, {\n        data: chartData\n    }, void 0, false, {\n        fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/components/TokenChart.js\",\n        lineNumber: 24,\n        columnNumber: 10\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TokenChart);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb21wb25lbnRzL1Rva2VuQ2hhcnQuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUFBO0FBQTBCO0FBQ2E7QUFDb0Y7QUFFM0gsK0JBQStCO0FBQy9CRyxvREFBZ0IsQ0FBQ0MsbURBQWEsRUFBRUMsaURBQVcsRUFBRUMsa0RBQVksRUFBRUMsaURBQVcsRUFBRUMsMkNBQUssRUFBRUMsNkNBQU8sRUFBRUMsNENBQU0sQ0FBQyxDQUFDO0FBRWhHLE1BQU1FLFVBQVUsR0FBRyxDQUFDLEVBQUVDLFNBQVMsR0FBRSxHQUFLO0lBQ3BDLElBQUksQ0FBQ0EsU0FBUyxFQUFFLHFCQUFPLDhEQUFDQyxHQUFDO2tCQUFDLGtCQUFnQjs7Ozs7aUJBQUksQ0FBQztJQUUvQyxNQUFNQyxTQUFTLEdBQUc7UUFDaEJDLE1BQU0sRUFBRUgsU0FBUyxDQUFDSSxPQUFPLENBQUNDLEdBQUcsQ0FBQ0MsQ0FBQUEsS0FBSyxHQUFJLElBQUlDLElBQUksQ0FBQ0QsS0FBSyxDQUFDRSxTQUFTLENBQUMsQ0FBQ0Msa0JBQWtCLEVBQUUsQ0FBQztRQUN0RkMsUUFBUSxFQUFFO1lBQ1I7Z0JBQ0VDLEtBQUssRUFBRSxDQUFDLEVBQUVYLFNBQVMsQ0FBQ1ksTUFBTSxDQUFDLFlBQVksQ0FBQztnQkFDeENDLElBQUksRUFBRWIsU0FBUyxDQUFDSSxPQUFPLENBQUNDLEdBQUcsQ0FBQ0MsQ0FBQUEsS0FBSyxHQUFJQSxLQUFLLENBQUNRLEtBQUssQ0FBQztnQkFDakRDLFdBQVcsRUFBRSx1QkFBdUI7Z0JBQ3BDQyxlQUFlLEVBQUUseUJBQXlCO2dCQUMxQ0MsV0FBVyxFQUFFLENBQUM7YUFDZjtTQUNGO0tBQ0Y7SUFFRCxxQkFBTyw4REFBQzdCLGlEQUFJO1FBQUN5QixJQUFJLEVBQUVYLFNBQVM7Ozs7O2lCQUFJLENBQUM7QUFDbkMsQ0FBQztBQUVELGlFQUFlSCxVQUFVLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly90b2tlbi1jaGFydGluZy1mcm9udGVuZC8uL2NvbXBvbmVudHMvVG9rZW5DaGFydC5qcz80M2NlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBMaW5lIH0gZnJvbSAncmVhY3QtY2hhcnRqcy0yJztcbmltcG9ydCB7IENoYXJ0IGFzIENoYXJ0SlMsIENhdGVnb3J5U2NhbGUsIExpbmVhclNjYWxlLCBQb2ludEVsZW1lbnQsIExpbmVFbGVtZW50LCBUaXRsZSwgVG9vbHRpcCwgTGVnZW5kIH0gZnJvbSAnY2hhcnQuanMnO1xuXG4vLyBSZWdpc3RlciBDaGFydC5qcyBjb21wb25lbnRzXG5DaGFydEpTLnJlZ2lzdGVyKENhdGVnb3J5U2NhbGUsIExpbmVhclNjYWxlLCBQb2ludEVsZW1lbnQsIExpbmVFbGVtZW50LCBUaXRsZSwgVG9vbHRpcCwgTGVnZW5kKTtcblxuY29uc3QgVG9rZW5DaGFydCA9ICh7IHRva2VuRGF0YSB9KSA9PiB7XG4gIGlmICghdG9rZW5EYXRhKSByZXR1cm4gPHA+TG9hZGluZyBjaGFydC4uLjwvcD47XG5cbiAgY29uc3QgY2hhcnREYXRhID0ge1xuICAgIGxhYmVsczogdG9rZW5EYXRhLmhpc3RvcnkubWFwKGVudHJ5ID0+IG5ldyBEYXRlKGVudHJ5LnRpbWVzdGFtcCkudG9Mb2NhbGVUaW1lU3RyaW5nKCkpLFxuICAgIGRhdGFzZXRzOiBbXG4gICAgICB7XG4gICAgICAgIGxhYmVsOiBgJHt0b2tlbkRhdGEuc3ltYm9sfSBQcmljZSAoVVNEKWAsXG4gICAgICAgIGRhdGE6IHRva2VuRGF0YS5oaXN0b3J5Lm1hcChlbnRyeSA9PiBlbnRyeS5wcmljZSksXG4gICAgICAgIGJvcmRlckNvbG9yOiAncmdiYSg3NSwgMTkyLCAxOTIsIDEpJyxcbiAgICAgICAgYmFja2dyb3VuZENvbG9yOiAncmdiYSg3NSwgMTkyLCAxOTIsIDAuMiknLFxuICAgICAgICBib3JkZXJXaWR0aDogMixcbiAgICAgIH1cbiAgICBdLFxuICB9O1xuXG4gIHJldHVybiA8TGluZSBkYXRhPXtjaGFydERhdGF9IC8+O1xufTtcblxuZXhwb3J0IGRlZmF1bHQgVG9rZW5DaGFydDtcbiJdLCJuYW1lcyI6WyJSZWFjdCIsIkxpbmUiLCJDaGFydCIsIkNoYXJ0SlMiLCJDYXRlZ29yeVNjYWxlIiwiTGluZWFyU2NhbGUiLCJQb2ludEVsZW1lbnQiLCJMaW5lRWxlbWVudCIsIlRpdGxlIiwiVG9vbHRpcCIsIkxlZ2VuZCIsInJlZ2lzdGVyIiwiVG9rZW5DaGFydCIsInRva2VuRGF0YSIsInAiLCJjaGFydERhdGEiLCJsYWJlbHMiLCJoaXN0b3J5IiwibWFwIiwiZW50cnkiLCJEYXRlIiwidGltZXN0YW1wIiwidG9Mb2NhbGVUaW1lU3RyaW5nIiwiZGF0YXNldHMiLCJsYWJlbCIsInN5bWJvbCIsImRhdGEiLCJwcmljZSIsImJvcmRlckNvbG9yIiwiYmFja2dyb3VuZENvbG9yIiwiYm9yZGVyV2lkdGgiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/TokenChart.js\n");
+
+/***/ }),
+
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"axios\");\n/* harmony import */ var _components_TokenChart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/TokenChart */ \"./components/TokenChart.js\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([axios__WEBPACK_IMPORTED_MODULE_2__, _components_TokenChart__WEBPACK_IMPORTED_MODULE_3__]);\n([axios__WEBPACK_IMPORTED_MODULE_2__, _components_TokenChart__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\nfunction Home() {\n    const { 0: tokenData , 1: setTokenData  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const { 0: selectedToken , 1: setSelectedToken  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"BTC\"); // Default to Bitcoin\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const fetchData = async ()=>{\n            try {\n                const res = await axios__WEBPACK_IMPORTED_MODULE_2__[\"default\"].get(`http://localhost:3000/token/history/${selectedToken}`);\n                setTokenData(res.data);\n            } catch (error) {\n                console.error(\"Error fetching token history:\", error);\n            }\n        };\n        fetchData();\n        const interval = setInterval(fetchData, 60000); // Refresh every minute\n        return ()=>clearInterval(interval);\n    }, [\n        selectedToken\n    ]);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        style: {\n            padding: \"20px\",\n            fontFamily: \"Arial\"\n        },\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Crypto Token Charting\"\n            }, void 0, false, {\n                fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n                lineNumber: 26,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"select\", {\n                onChange: (e)=>setSelectedToken(e.target.value),\n                value: selectedToken,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                        value: \"BTC\",\n                        children: \"Bitcoin (BTC)\"\n                    }, void 0, false, {\n                        fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n                        lineNumber: 29,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                        value: \"ETH\",\n                        children: \"Ethereum (ETH)\"\n                    }, void 0, false, {\n                        fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n                        lineNumber: 30,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"option\", {\n                        value: \"SOL\",\n                        children: \"Solana (SOL)\"\n                    }, void 0, false, {\n                        fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n                        lineNumber: 31,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n                lineNumber: 28,\n                columnNumber: 7\n            }, this),\n            tokenData ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_TokenChart__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n                tokenData: tokenData\n            }, void 0, false, {\n                fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n                lineNumber: 34,\n                columnNumber: 20\n            }, this) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                children: \"Loading data...\"\n            }, void 0, false, {\n                fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n                lineNumber: 34,\n                columnNumber: 59\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/carlosbanks/Desktop/Projects/nest/token-charting-frontend/pages/index.js\",\n        lineNumber: 25,\n        columnNumber: 5\n    }, this);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBQUE7QUFBNEM7QUFDbEI7QUFDd0I7QUFFbkMsU0FBU0ksSUFBSSxHQUFHO0lBQzdCLE1BQU0sS0FBQ0MsU0FBUyxNQUFFQyxZQUFZLE1BQUlMLCtDQUFRLENBQUMsSUFBSSxDQUFDO0lBQ2hELE1BQU0sS0FBQ00sYUFBYSxNQUFFQyxnQkFBZ0IsTUFBSVAsK0NBQVEsQ0FBQyxLQUFLLENBQUMsRUFBRSxxQkFBcUI7SUFFaEZELGdEQUFTLENBQUMsSUFBTTtRQUNkLE1BQU1TLFNBQVMsR0FBRyxVQUFZO1lBQzVCLElBQUk7Z0JBQ0YsTUFBTUMsR0FBRyxHQUFHLE1BQU1SLGlEQUFTLENBQUMsQ0FBQyxvQ0FBb0MsRUFBRUssYUFBYSxDQUFDLENBQUMsQ0FBQztnQkFDbkZELFlBQVksQ0FBQ0ksR0FBRyxDQUFDRSxJQUFJLENBQUMsQ0FBQztZQUN6QixFQUFFLE9BQU9DLEtBQUssRUFBRTtnQkFDZEMsT0FBTyxDQUFDRCxLQUFLLENBQUMsK0JBQStCLEVBQUVBLEtBQUssQ0FBQyxDQUFDO1lBQ3hELENBQUM7UUFDSCxDQUFDO1FBRURKLFNBQVMsRUFBRSxDQUFDO1FBQ1osTUFBTU0sUUFBUSxHQUFHQyxXQUFXLENBQUNQLFNBQVMsRUFBRSxLQUFLLENBQUMsRUFBRSx1QkFBdUI7UUFDdkUsT0FBTyxJQUFNUSxhQUFhLENBQUNGLFFBQVEsQ0FBQyxDQUFDO0lBQ3ZDLENBQUMsRUFBRTtRQUFDUixhQUFhO0tBQUMsQ0FBQyxDQUFDO0lBRXBCLHFCQUNFLDhEQUFDVyxLQUFHO1FBQUNDLEtBQUssRUFBRTtZQUFFQyxPQUFPLEVBQUUsTUFBTTtZQUFFQyxVQUFVLEVBQUUsT0FBTztTQUFFOzswQkFDbEQsOERBQUNDLElBQUU7MEJBQUMsdUJBQXFCOzs7OztvQkFBSzswQkFFOUIsOERBQUNDLFFBQU07Z0JBQUNDLFFBQVEsRUFBRSxDQUFDQyxDQUFDLEdBQUtqQixnQkFBZ0IsQ0FBQ2lCLENBQUMsQ0FBQ0MsTUFBTSxDQUFDQyxLQUFLLENBQUM7Z0JBQUVBLEtBQUssRUFBRXBCLGFBQWE7O2tDQUM3RSw4REFBQ3FCLFFBQU07d0JBQUNELEtBQUssRUFBQyxLQUFLO2tDQUFDLGVBQWE7Ozs7OzRCQUFTO2tDQUMxQyw4REFBQ0MsUUFBTTt3QkFBQ0QsS0FBSyxFQUFDLEtBQUs7a0NBQUMsZ0JBQWM7Ozs7OzRCQUFTO2tDQUMzQyw4REFBQ0MsUUFBTTt3QkFBQ0QsS0FBSyxFQUFDLEtBQUs7a0NBQUMsY0FBWTs7Ozs7NEJBQVM7Ozs7OztvQkFDbEM7WUFFUnRCLFNBQVMsaUJBQUcsOERBQUNGLDhEQUFVO2dCQUFDRSxTQUFTLEVBQUVBLFNBQVM7Ozs7O29CQUFJLGlCQUFHLDhEQUFDd0IsR0FBQzswQkFBQyxpQkFBZTs7Ozs7b0JBQUk7Ozs7OztZQUN0RSxDQUNOO0FBQ0osQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3Rva2VuLWNoYXJ0aW5nLWZyb250ZW5kLy4vcGFnZXMvaW5kZXguanM/YmVlNyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJztcbmltcG9ydCBUb2tlbkNoYXJ0IGZyb20gJy4uL2NvbXBvbmVudHMvVG9rZW5DaGFydCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWUoKSB7XG4gIGNvbnN0IFt0b2tlbkRhdGEsIHNldFRva2VuRGF0YV0gPSB1c2VTdGF0ZShudWxsKTtcbiAgY29uc3QgW3NlbGVjdGVkVG9rZW4sIHNldFNlbGVjdGVkVG9rZW5dID0gdXNlU3RhdGUoJ0JUQycpOyAvLyBEZWZhdWx0IHRvIEJpdGNvaW5cblxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGNvbnN0IGZldGNoRGF0YSA9IGFzeW5jICgpID0+IHtcbiAgICAgIHRyeSB7XG4gICAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGF4aW9zLmdldChgaHR0cDovL2xvY2FsaG9zdDozMDAwL3Rva2VuL2hpc3RvcnkvJHtzZWxlY3RlZFRva2VufWApO1xuICAgICAgICBzZXRUb2tlbkRhdGEocmVzLmRhdGEpO1xuICAgICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcignRXJyb3IgZmV0Y2hpbmcgdG9rZW4gaGlzdG9yeTonLCBlcnJvcik7XG4gICAgICB9XG4gICAgfTtcblxuICAgIGZldGNoRGF0YSgpO1xuICAgIGNvbnN0IGludGVydmFsID0gc2V0SW50ZXJ2YWwoZmV0Y2hEYXRhLCA2MDAwMCk7IC8vIFJlZnJlc2ggZXZlcnkgbWludXRlXG4gICAgcmV0dXJuICgpID0+IGNsZWFySW50ZXJ2YWwoaW50ZXJ2YWwpO1xuICB9LCBbc2VsZWN0ZWRUb2tlbl0pO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdiBzdHlsZT17eyBwYWRkaW5nOiAnMjBweCcsIGZvbnRGYW1pbHk6ICdBcmlhbCcgfX0+XG4gICAgICA8aDE+Q3J5cHRvIFRva2VuIENoYXJ0aW5nPC9oMT5cblxuICAgICAgPHNlbGVjdCBvbkNoYW5nZT17KGUpID0+IHNldFNlbGVjdGVkVG9rZW4oZS50YXJnZXQudmFsdWUpfSB2YWx1ZT17c2VsZWN0ZWRUb2tlbn0+XG4gICAgICAgIDxvcHRpb24gdmFsdWU9XCJCVENcIj5CaXRjb2luIChCVEMpPC9vcHRpb24+XG4gICAgICAgIDxvcHRpb24gdmFsdWU9XCJFVEhcIj5FdGhlcmV1bSAoRVRIKTwvb3B0aW9uPlxuICAgICAgICA8b3B0aW9uIHZhbHVlPVwiU09MXCI+U29sYW5hIChTT0wpPC9vcHRpb24+XG4gICAgICA8L3NlbGVjdD5cblxuICAgICAge3Rva2VuRGF0YSA/IDxUb2tlbkNoYXJ0IHRva2VuRGF0YT17dG9rZW5EYXRhfSAvPiA6IDxwPkxvYWRpbmcgZGF0YS4uLjwvcD59XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwibmFtZXMiOlsidXNlRWZmZWN0IiwidXNlU3RhdGUiLCJheGlvcyIsIlRva2VuQ2hhcnQiLCJIb21lIiwidG9rZW5EYXRhIiwic2V0VG9rZW5EYXRhIiwic2VsZWN0ZWRUb2tlbiIsInNldFNlbGVjdGVkVG9rZW4iLCJmZXRjaERhdGEiLCJyZXMiLCJnZXQiLCJkYXRhIiwiZXJyb3IiLCJjb25zb2xlIiwiaW50ZXJ2YWwiLCJzZXRJbnRlcnZhbCIsImNsZWFySW50ZXJ2YWwiLCJkaXYiLCJzdHlsZSIsInBhZGRpbmciLCJmb250RmFtaWx5IiwiaDEiLCJzZWxlY3QiLCJvbkNoYW5nZSIsImUiLCJ0YXJnZXQiLCJ2YWx1ZSIsIm9wdGlvbiIsInAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.js\n");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = import("axios");;
+
+/***/ }),
+
+/***/ "chart.js":
+/*!***************************!*\
+  !*** external "chart.js" ***!
+  \***************************/
+/***/ ((module) => {
+
+module.exports = import("chart.js");;
+
+/***/ }),
+
+/***/ "react-chartjs-2":
+/*!**********************************!*\
+  !*** external "react-chartjs-2" ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = import("react-chartjs-2");;
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/index.js"));
+module.exports = __webpack_exports__;
+
+})();
