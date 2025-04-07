@@ -1,6 +1,6 @@
 # Crypto Token Tracker
 
-![Crypto Token Tracker Screenshot](https://github.com/carlostbanks/nest-tokenList/raw/main/public/screenshot.png)
+![Crypto Token Tracker Screenshot](https://i.ibb.co/7Jy7fM16/Screenshot-2025-03-31-at-4-41-01-PM.png)
 
 ## Overview
 
